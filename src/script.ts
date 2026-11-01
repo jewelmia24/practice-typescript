@@ -40,3 +40,48 @@ const logUserAction = (...args:[name:string, age:number, isActive:boolean])=>{
 
 
 logUserAction("jewel", 25, true)
+
+//* object type , type alias and interface
+
+type TAddress ={
+    street : string,
+    houseNumber : number,
+}
+
+type TUser = {
+    name : string,
+    age : number,
+    isActive : boolean,
+    action : ()=>void,
+    badges : string[]
+    address : TAddress
+}
+
+
+const user: TUser ={
+    name : "jewel",
+    age : 25,
+    isActive : true,
+    action : ()=> console.log("user action"),
+    badges : ["admin", "moderator"],
+    address :{
+        street : "main street",
+        houseNumber : 123
+    }
+}
+
+interface IUser {
+    name : string,
+    age : number,
+    isActive : boolean,
+    action : ()=>void,
+    badges : string[]
+}
+
+const user2: IUser ={
+    name : "rana",
+    age : 30,
+    isActive : false,
+    action : ()=> console.log("user2 action"),
+    badges : ["user", "editor"]
+}
