@@ -35,3 +35,17 @@ const configuration =  {
 
 
 //! configuration.port = 4000  
+
+
+//* generic type 
+
+
+type TResponse<T> = {
+    status: TStatus,
+    data: T
+}
+
+const response: TResponse<string> = {
+    status: "success",
+    data: "This is a string"
+}
