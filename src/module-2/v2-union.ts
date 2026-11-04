@@ -3,7 +3,7 @@
 type TStatus = "pending"
 
 const status: TStatus = "pending"
-console.log(status)
+//console.log(status)
 
 //* basic union type
 
@@ -11,14 +11,14 @@ type TIdentity = string | number
 
 const identity : TIdentity = "Din Islam"
 
-console.log(identity)
+//console.log(identity)
 
 //* literal union type
 
 type TUserRole = "admin" | "user" 
 
 const userRole: TUserRole = "admin"
-console.log(userRole)
+//console.log(userRole)
 
 
 //* oject union type
